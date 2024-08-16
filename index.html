@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Page Using HTML & CSS</title>
+    <style type="text/css">
+        *{padding: 0; margin:0; box-sizing: border-box;}
+        header{
+            width: 100%;
+            height: 100vh;
+            background: url('https://clubmahindra.gumlet.io/blog/images/Puran-Poli-resized.jpg?w=376&dpr=2.6');
+            background-size: cover;
+            font-family: Arial Black;
+        }
+        nav{
+            width: 100%;
+            height: 100px;
+            color: black;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .logo{
+            font-size: 2em;
+            letter-spacing: 3px;
+        }
+        .menu a{
+            text-decoration: none;
+            color: black;
+            padding: 10px 20px;
+            font-size: 20px;
+            position: relative;
+        }
+        .menu a:before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-bottom: 2px solid indianred;
+            transition: 0.4s linear;
+        }
+        .menu a:hover:before{
+            width: 90%;
+        }
+        .register a{
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 20px;
+            background: indianred;
+            border-radius: 8px;
+            transition: 0.4s;
+        }
+        .register a:hover{
+            background: transparent;
+            border: 1px solid indianred;
+        }
+        .h-text{
+            max-width: 650px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: black;
+        }
+        .h-text h1{
+            font-size: 3.5em;
+        }
+        .h-text a{
+            text-decoration: none;
+            background: indianred;
+            color: white;
+            padding: 10px 20px;
+            letter-spacing: 5px;
+            border-radius: 8px;
+            transition: 0.4s;
+        }
+        .h-text a:hover{
+            background: transparent;
+            border: 1px solid indianred;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            resize: vertical;
+        }
+        .form-group button {
+            padding: 10px 15px;
+            background-color: indianred;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background-color: indianred;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                अस्सल  मराठी
+            </div>
+            <div class="menu">
+                <a href="#home">Home</a>
+                <a href="#foods-variety">Foods variety</a>
+                <a href="#best-offers">Best offer's</a>
+                <a href="#specality">Specality</a>
+                <a href="#order">Order</a>
+                <a href="#contact">Contact</a>
+            </div>
+             
+        </nav>
+        <section class="h-text">
+            <h1>"महाराष्ट्राची खाद्यसंस्कृती"</h1>
+            <br>
+            <a href="#">Order Dish</a>
+        </section>
+    </header>
+
+    
+
+    <section id="foods-variety">
+        <h2 align="center">Foods Variety</h2>
+         
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDYzf3Wf5jEr-8O4wOIe6f-GY0_hbDALPmtQ&usqp=CAU">     
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt5GBQrZDoTLNyBc8IuC1tz-kPnFcDUhufGQ&usqp=CAU">
+        <img src="https://images.slurrp.com/prodrich_article/2oweu7ssdby.webp?impolicy=slurrp-20210601&width=880&height=500">
+    </section>
+
+    <section id="best-offers">
+        <h2 align="center">Best Offers</h2>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB3738beR3h_YDyvtguZqVExYX5z-nEpxHmA&usqp=CAU">
+         <img src="https://halwaisweets.com/wp-content/uploads/2022/05/Ghee-Jalebi-with-Rabdi.jpg">
+         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVwinRveWtKrFV6uhpbIUwTK7kdBxTeQINug&usqp=CAU">
+         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp4prUo53YCYqeHESncN9iA7NRxCCb87oJGA&usqp=CAU">
+         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC-QTMYGLWDri6iirNvjmSAyB5csMkrljiKqoJEmJQAIxCS9digZfVfRWR8f60LEkrv8A&usqp=CAU">
+         </section>
+
+    <section id="specality">
+        <h2 align="center">Specality</h2>
+        <p>चुलीवरची भाकरी</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT_AOQujhBFk3ZMyBcyVELYGLKkFQ2Q9iCtq4EBhW92iC3AaKkQLy8791lHW-VU3yJszg&usqp=CAU">
+        <img src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ-LXem22jxQ1-oQNlznFIxQchMjpBp5dL9w&usqp=CAU">
+         
+        <p>मठ्ठा</p>
+         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpNSfFoNN9c5ZdW-GdpGJR2EgQjWd0p1QGOw&usqp=CAU">
+        <p>वांग्याचे भरीत</p>
+        <img src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUUb21IsD1tXu2G12EOMUibx3dS1rL53jjeQ&usqp=CAU">
+    </section>
+     
+
+
+<section id="order">
+    <h1>Order for Our Food Service</h1>
+    <br>
+    <form action="/submit-registration" method="post">
+         
+        <div class="form-group">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+
+         
+
+         
+        <div class="form-group">
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address">
+        </div>
+        <div class="form-group">
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city">
+        </div>
+
+         
+        <div class="form-group">
+            <label for="dietaryRestrictions">Dietary Restrictions:</label>
+            <input type="text" id="dietaryRestrictions" name="dietaryRestrictions">
+        </div>
+        <div class="form-group">
+            <label for="foodAllergies">Food Allergies:</label>
+            <input type="text" id="foodAllergies" name="foodAllergies">
+        </div>
+
+         
+        <div class="form-group">
+            <label for="cardNumber">Credit/Debit Card Number:</label>
+            <input type="text" id="cardNumber" name="cardNumber">
+        </div>
+        <div class="form-group">
+            <label for="billingAddress">Billing Address:</label>
+            <input type="text" id="billingAddress" name="billingAddress">
+        </div>
+
+         
+        <div class="form-group">
+            <label for="deliveryAddress">Delivery Address:</label>
+            <input type="text" id="deliveryAddress" name="deliveryAddress">
+        </div>
+        <div class="form-group">
+            <label for="deliveryTimes">Preferred Delivery Times:</label>
+            <input type="text" id="deliveryTimes" name="deliveryTimes">
+        </div>
+
+         
+        <div class="form-group">
+            <label for="specialRequests">Special Requests or Notes:</label>
+            <textarea id="specialRequests" name="specialRequests" rows="4"></textarea>
+        </div>
+
+         
+        <div class="form-group">
+            <button type="submit">Register</button>
+        </div>
+       </form></section>
+
+       <section id="contact">
+        <h2 style="text-align: center">Contact Us</h2>
+        <p style="text-align: center; font-size: 18px;">
+           Address: Surekha Nagar, Malkapur, Akola<br>
+           Phone No: 9518760826<br>
+           Email: foodifoodie001@gmail.com<br>
+        </p>
+    </section>
+  
+</body>
+</html>
